@@ -12,9 +12,9 @@ const musica = new Audio('./sons/luna-rise-part-one.mp3')
 musica.loop = true
 const botaoStart = document.querySelector('#start-pause')
 const tempoNaTela = document.querySelector('#timer')
-const playMusic = new Audio('/sons/play.wav')
-const pauseMusic =  new Audio('/sons/pause.mp3')
-const beepMusic =  new Audio('/sons/beep.mp3')
+const playMusic = new Audio('./sons/play.wav')
+const pauseMusic =  new Audio('./sons/pause.mp3')
+const beepMusic =  new Audio('./sons/beep.mp3')
 
 let tempoDecorridoEmSegundos = 1500;
 let intervaloId =  null;
@@ -94,14 +94,14 @@ function iniciarOuPausar(){
     playMusic.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
     inciciarPausarBt.textContent = "Pausar"
-    iconePausarOuIniciar.setAttribute('src', '/imagens/pause.png')
+    iconePausarOuIniciar.setAttribute('src', './imagens/pause.png')
     
 }
 
 function zerar(){
     clearInterval(intervaloId)
     inciciarPausarBt.textContent ="Começar"
-    iconePausarOuIniciar.setAttribute('src', '/imagens/play_arrow.png')
+    iconePausarOuIniciar.setAttribute('src', './imagens/play_arrow.png')
     intervaloId = null
 }
 
