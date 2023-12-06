@@ -30,7 +30,7 @@ musicaFocoInput.addEventListener('change', () => {
 //primeira forma de altera a cor de fundo
 
 focoBt.addEventListener('click', () =>{
-    tempoDecorridoEmSegundos = 1500;
+    tempoDecorridoEmSegundos = 30;
     alterarContexto('foco')
     focoBt.classList.add('active');
 })
@@ -75,6 +75,11 @@ const contagemRegressiva = () => {
     if(tempoDecorridoEmSegundos <= 0){
         beepMusic.play()
         alert('tempo finalizado')
+        const focoAtivo = html.getAttribute('data-contexto') == 'foco'
+        if(focoAtivo){
+            const evento = new CustomEvent('FocoFinalizado')
+            document.dispatchEvent(evento)
+        }
         zerar()
         return 
     }
