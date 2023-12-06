@@ -30,7 +30,7 @@ musicaFocoInput.addEventListener('change', () => {
 //primeira forma de altera a cor de fundo
 
 focoBt.addEventListener('click', () =>{
-    tempoDecorridoEmSegundos = 30;
+    tempoDecorridoEmSegundos = 1500;
     alterarContexto('foco')
     focoBt.classList.add('active');
 })
