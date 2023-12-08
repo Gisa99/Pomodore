@@ -4,4 +4,6 @@ Banner do projeto![readme](https://github.com/Gisa99/Pomodore/assets/88169633/8b
 
 Projeto construído com HTML, CSS e Javascript ;)
 
+Você pode acessar o projeto por aqui: https://gisa99.github.io/Pomodore/
+
 #aprendinaalura
