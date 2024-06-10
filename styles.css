@@ -315,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 
 .app__section-task-content {
@@ -478,6 +479,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 150%;
     gap: 0.8rem;
+
 }
 
 .app__form-footer__button--confirm {
